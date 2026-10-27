@@ -40,5 +40,5 @@ test-suite spec
   type:             exitcode-stdio-1.0
   hs-source-dirs:   tests
   main-is:          Main.hs
-  other-modules:    Harness ParserSpec InferSpec EvalSpec
+  other-modules:    Harness ParserSpec InferSpec EvalSpec PropertySpec
   build-depends:    minml
