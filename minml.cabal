@@ -27,11 +27,18 @@ library
     MiniML.Syntax
     MiniML.Lexer
     MiniML.Parser
+    MiniML.Types
+    MiniML.Infer
+    MiniML.Value
+    MiniML.Builtins
+    MiniML.Eval
+    MiniML.Prelude
+    MiniML.Driver
 
 test-suite spec
   import:           shared
   type:             exitcode-stdio-1.0
   hs-source-dirs:   tests
   main-is:          Main.hs
-  other-modules:    Harness ParserSpec
+  other-modules:    Harness ParserSpec InferSpec EvalSpec
   build-depends:    minml
